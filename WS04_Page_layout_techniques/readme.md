@@ -1,2 +1,1 @@
-Tä
-nne WS04 tehtävä
+Tänne tulee WS04 tehtävä kun se on valmis
