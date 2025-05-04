@@ -1,1 +1,1 @@
-Tänne WS05 tehtävä
+Tänne tulee WS05 tehtävä
