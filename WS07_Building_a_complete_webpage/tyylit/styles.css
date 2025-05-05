@@ -1,0 +1,121 @@
+ h1, h2, h3, h4, h6, p {
+    color: #ffffff; /* valkoinen teksti */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* tumma varjo tekstin taustalle */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  
+  /* Navigaatio keskelle ja korostus aktiiviselle linkille */
+  nav ul.nav {
+    margin-bottom: 0;
+  }
+  
+  nav ul.nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav ul.nav .nav-link:hover,
+  nav ul.nav .nav-link.active {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+  
+  /* Vasen reuna-asettelu containerille */
+  .container {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  /* Sivupalkki */
+  aside {
+    position: relative;
+  }
+  
+  aside h5 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  aside ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsiiviset muutokset */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    header nav ul.nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main {
+      margin-top: 1rem;
+    }
+  }
+/* mainin p fonttikokoa isommaksi */
+  main p {
+    font-size: 1.50rem;
+  }
+
+  main h1 {
+    font-size: 3.00rem;
+  }
+  
+
+      /* Taustakuvan säädöt */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        background-image: url('../kuvat/taustakuva.jpg');
+        background-size: cover;         /* Skaalaa taustakuva koko näkymän kokoiseksi */
+        background-repeat: no-repeat;   /* Estää kuvan toistamisen */
+        background-attachment: fixed;   /* Kiinnittää kuvan paikalleen, vaikka sivua vieritetään */
+        background-position: center;    /* Asettaa kuvan keskelle */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* musta 30% läpinäkyvä kerros */
+        z-index: -1; /* pysyy taustalla */
+      }
+      
+      /* Footer alareunaan*/
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      body > .container {
+        flex: 1 0 auto;
+      }
+      
+      footer {
+        flex-shrink: 0;
+      }
+      
+  
