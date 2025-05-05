@@ -19,8 +19,8 @@
   
   nav ul.nav .nav-link:hover,
   nav ul.nav .nav-link.active {
-    color: #0d6efd;
-    text-decoration: underline;
+    color: blue;
+    text-decoration: underline; /* Navigaation hover alleviivaus */
   }
   
   /* Vasen reuna-asettelu containerille */
@@ -34,7 +34,7 @@
   aside {
     position: relative;
   }
-  
+
   aside h5 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -42,11 +42,6 @@
   
   aside ul li {
     margin-bottom: 0.5rem;
-  }
-
-  /* Footer */
-  footer {
-    font-size: 0.9rem;
   }
   
   /* Responsiiviset muutokset */
@@ -65,7 +60,7 @@
       margin-top: 1rem;
     }
   }
-/* mainin p fonttikokoa isommaksi */
+/* mainin p ja h1 fonttikokoa isommaksi */
   main p {
     font-size: 1.50rem;
   }
@@ -98,7 +93,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.3); /* musta 30% läpinäkyvä kerros */
+        background: rgba(0, 0, 0, 0.3); /* tummuutta 30% taustakuvaan jotta tekstit näkyy paremmin */
         z-index: -1; /* pysyy taustalla */
       }
       
@@ -111,11 +106,10 @@
       }
       
       body > .container {
-        flex: 1 0 auto;
+        flex: auto;
       }
-      
+        /* Footer */
       footer {
         flex-shrink: 0;
+        font-size: 0.9rem;
       }
-      
-  
