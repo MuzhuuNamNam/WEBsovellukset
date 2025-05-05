@@ -6,7 +6,7 @@
   }
 
   
-  /* Navigaatio*/
+  /* Navigaatio keskelle ja korostus aktiiviselle linkille */
   nav ul.nav {
     margin-bottom: 0;
   }
@@ -22,15 +22,6 @@
     color: blue;
     text-decoration: underline; /* Navigaation hover alleviivaus */
   }
-
-  @media (max-width: 600px) {
-    nav ul.nav {
-      flex-direction: row !important;
-      flex-wrap: wrap; /* tarvittaessa rivittyy, mutta säilyy rivissä */
-      justify-content: center;
-    }
-  }
-  
   
   /* Vasen reuna-asettelu containerille */
   .container {
@@ -54,7 +45,7 @@
   }
   
   /* Responsiiviset muutokset */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -77,6 +68,7 @@
   main h1 {
     font-size: 3.00rem;
   }
+  
 
       /* Taustakuvan säädöt */
       body {
