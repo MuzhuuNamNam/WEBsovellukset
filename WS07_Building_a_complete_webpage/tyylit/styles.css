@@ -36,7 +36,7 @@
   }
 
   aside h5 {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /*Reissun tiedot pähkinänkuoressa koko*/
     margin-bottom: 1rem;
   }
   
@@ -45,7 +45,7 @@
   }
   
   /* Responsiiviset muutokset */
-  @media (max-width: 768px) {
+  @media (max-width: 200px) {
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
