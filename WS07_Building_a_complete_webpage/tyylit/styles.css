@@ -113,3 +113,40 @@
         flex-shrink: 0;
         font-size: 0.9rem;
       }
+      /*KUVAGALLERIAN ASETUKSET*/
+      main > .container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /*Ota pois jos parempi vasemmassa reunassa*/
+        align-items: center; /*Ota pois jos parempi vasemmassa reunassa*/
+        text-align: center; /*Ota pois jos parempi vasemmassa reunassa*/
+        margin: 40px 20px 0 20px;
+      }
+
+      .container .heading {
+        width: 50%;
+        padding-bottom: 50px;
+      }
+
+      .container .heading h2 {
+        font-size: 2em;
+        font-weight: ;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #222;
+      }
+
+      .container .heading h2 span{
+        font-size: 3em;
+        font-weight: 100;
+        border-bottom: 3px solid #222;
+      }
+      .container .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
