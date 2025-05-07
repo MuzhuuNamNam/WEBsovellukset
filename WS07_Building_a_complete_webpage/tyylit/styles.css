@@ -113,18 +113,16 @@
         flex-shrink: 0;
         font-size: 0.9rem;
       }
+
       /*KUVAGALLERIAN ASETUKSET*/
-      main > .container {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+      .box {
         display: flex;
-        flex-direction: column;
-        justify-content: center; /*Ota pois jos parempi vasemmassa reunassa*/
-        align-items: center; /*Ota pois jos parempi vasemmassa reunassa*/
-        text-align: center; /*Ota pois jos parempi vasemmassa reunassa*/
-        margin: 40px 20px 0 20px;
+        justify-content: center;
+        gap: 10px; /* sarakkeiden väli ylhäältä alas */
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
       }
 
       .container .heading {
@@ -133,20 +131,38 @@
       }
 
       .container .heading h2 {
+        justify-content: center;
         font-size: 2em;
-        font-weight: ;
+        font-weight: bolder;
         padding-bottom: 10px;
-        border-bottom: 3px solid #222;
+        border-bottom: 3px solid white;
+      }
+      .container .heading h2 span {
+        justify-content: center;
+        font-size: 2em;
+        font-weight: bolder;
+        padding-bottom: 10px;
+        border-bottom: 3px solid white;
       }
 
-      .container .heading h2 span{
-        font-size: 3em;
-        font-weight: 100;
-        border-bottom: 3px solid #222;
-      }
-      .container .box {
+      .box div {
+        flex: 1;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px; /* kuvien väli oikealta vasemmalle */
       }
+      
+      .box img {
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      
+      /* Responsiivinen muutos mobiiliin */
+      @media (max-width: 768px) {
+        .box {
+          flex-direction: column;
+        }
+      }
+      
 
