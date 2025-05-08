@@ -45,7 +45,7 @@
   }
   
   /* Responsiiviset muutokset */
-  @media (max-width: 200px) {
+  @media (max-width: 768px) {
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -117,39 +117,44 @@
       /*KUVAGALLERIAN ASETUKSET*/
       .box {
         display: flex;
-        justify-content: center;
-        gap: 10px; /* sarakkeiden väli ylhäältä alas */
         flex-wrap: wrap;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 10px;
+        justify-content: center;
+        gap: 5px;
       }
+      
 
       .container .heading {
         width: 50%;
         padding-bottom: 50px;
       }
 
-      .container .heading h2 {
-        justify-content: center;
+      .container .box h2 {
         font-size: 2em;
         font-weight: bolder;
         padding-bottom: 10px;
         border-bottom: 3px solid white;
       }
-      .container .heading h2 span {
-        justify-content: center;
+      .container .box h2 span {
         font-size: 2em;
         font-weight: bolder;
         padding-bottom: 10px;
-        border-bottom: 3px solid white;
       }
+     
+      .gallery-title {
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      
 
       .box div {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 10px; /* kuvien väli oikealta vasemmalle */
+        gap: 5px; /* kuvien väli oikealta vasemmalle */
       }
       
       .box img {
