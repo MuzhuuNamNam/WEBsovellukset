@@ -23,13 +23,6 @@
     text-decoration: underline; /* Navigaation hover alleviivaus */
   }
   
-  /* Vasen reuna-asettelu containerille */
-  .container {
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  
   /* Sivupalkki */
   aside {
     position: relative;
