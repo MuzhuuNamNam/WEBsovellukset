@@ -28,6 +28,24 @@
     color: blue;
     text-decoration: underline; /* Navigaation hover alleviivaus */
   }
+  /*tulokset.html NAVI VALIKON NAPIT*/
+.btn-toggle-custom {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.btn-toggle-custom:hover {
+  background-color: lightseagreen;
+  color: #fff;
+}
+
   
   /* Sivupalkki etusivulla */
   aside {
@@ -177,7 +195,7 @@
       }
 
       .link-btn-custom:hover {
-       background-color: blue;
-       color: #fff;
+        background-color: lightseagreen;
+        color: #fff;
       }
       /*TULOKSET SIVUN NAVIGOINTI LOPPUU*/
