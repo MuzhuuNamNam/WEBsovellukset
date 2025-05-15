@@ -189,7 +189,7 @@
         color: #fff;
         border: 3px solid #fff;
         padding: 0.5rem 1rem;
-        border-radius: 10px; /*Pyöristyskulma*/
+        border-radius: 10px;
         transition: all 0.2s;
        text-decoration: none;
        display: inline-block;
@@ -200,4 +200,3 @@
         color: #fff;
       }
       /*TULOKSET SIVUN NAVIGOINTI LOPPUU*/
-
