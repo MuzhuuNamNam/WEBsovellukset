@@ -200,4 +200,22 @@
         color: #fff;
       }
       /*TULOKSET SIVUN NAVIGOINTI LOPPUU*/
+      /*INDEX sivun pelaajaesittelyt*/
+
+
+      .col .pelaaja-kortti {
+        background-color: rgb(239, 239, 239);
+      }
+
+      .pelaaja-esittely {
+        font-size: 15px;
+        text-shadow: none;
+        color: black;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+
 
